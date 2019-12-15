@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Drawing app</title>
+    <!-- Socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- p5.js libraries -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <!-- Main p5.js sketch -->
+    <script type="text/javascript" src="sketch.js"></script>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Local css -->
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+
+<body class="bg-secondary">
+
+<div class="container container-fluid">
+    <div class="input-group mt-4">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Choose color (#hex):</span>
+        </div>
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="color-holder"></span>
+        </div>
+        <input type="text" class="form-control" placeholder="#FFF" aria-label="Color picker" id="color-picker">
+        <div class="input-group-append">
+            <button class="btn btn-outline-light" type="button" id="color-btn">Change color</button>
+        </div>
+    </div>
+
+    <div class="input-group mt-4">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Choose stroke width:</span>
+        </div>
+        <input type="text" class="form-control" placeholder="4" aria-label="Width picker" id="stroke-width-picker">
+        <div class="input-group-append">
+            <button class="btn btn-outline-light" type="button" id="stroke-btn">Change stroke width</button>
+        </div>
+    </div>
+
+    <div class="mt-4 mb-4">
+        <button type="button" class="btn btn-warning btn-block" id="clear-canvas">Clear canvas</button>
+    </div>
+</div>
+
+</body>
+
+</html>

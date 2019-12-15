@@ -1,0 +1,16 @@
+{
+  "name": "drawing-app",
+  "version": "1.0.0",
+  "description": "Realtime drawing app using socket.io and p5.js",
+  "main": "server.js",
+  "author": "takaiten",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "p5": "^0.10.2",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
