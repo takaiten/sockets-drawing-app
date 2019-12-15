@@ -1,10 +1,11 @@
 let socket;
 let color = '#000';
 let strokeWidth = 4;
+const size = 700;
 
 function setup() {
   // Creating canvas
-  createCanvas(windowWidth, 3 * windowHeight / 4);
+  createCanvas(size, size);
   background(255);
 
   // Start the socket connection
@@ -51,11 +52,6 @@ function setup() {
     background(255);
     socket.emit('clear');
   });
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, 3 * windowHeight / 4, false);
-  background(255);
 }
 
 function mouseDragged() {
