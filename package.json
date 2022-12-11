@@ -6,7 +6,7 @@
   "author": "takaiten",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "p5": "^0.10.2",
     "socket.io": "^2.3.0"
   },
